@@ -1,10 +1,17 @@
-***Voice Conversation Agent Leveraging Amazon Bedrock for Enhanced Customer Interactions***
+---
+title: "Voice Conversation Agent Leveraging Amazon Bedrock for Enhanced Customer Interactions"
+categories: [LLM, AWS, Bedrock]
+tags: [LLM, AWS, Bedrock]
+---
+
+
+# Voice Conversation Agent Leveraging Amazon Bedrock for Enhanced Customer Interactions
 
 The advent of artificial intelligence (AI) has revolutionized various industries, including customer service. In recent years, large language models (LLMs) have emerged as powerful tools for natural language processing (NLP) tasks. Here we explore the integration of Amazon Bedrock, a fully managed service that makes LLMs accessible to developers, with Amazon Connect, a cloud-based contact center solution, to enhance customer interactions. By combining the capabilities of Amazon Bedrock, Lex and Connect, we have developed a solution that can transcribe customer interactions in real-time, understand customer intent and sentiment, provide relevant information and assistance, automate routine tasks, and personalize interactions based on customer history and preferences. This integration leverages the power of LLMs to improve customer satisfaction and efficiency for our telecommunication industry application.
 
 We will discuss the key components of our solution, including Amazon Connect, Amazon Lex, and Amazon Bedrock. We will also delve into the use of Lambda functions, Cloudwatch and Amazon Connect flows. 
 
-**Architecture Overview: Integrating Amazon Bedrock with Amazon Connect Using AWS Services**
+## Architecture Overview: Integrating Amazon Bedrock with Amazon Connect Using AWS Services
 
 This section goes into detail about the architecture for a phone-based chatbot system that leverages Amazon Bedrock to generate dynamic responses during customer interactions. The process begins with data from external sources being ingested and stored in Amazon S3, which provide the necessary information for customer interactions. When a customer initiates a call through Amazon Connect or a call is initiated to the customer through connect, which acts as the entry point, allowing access to the stored data as needed with the general connections.
 
@@ -23,7 +30,7 @@ The contact flow can be downloaded from the export option and can be used if we 
 
 Also need to create a phone number for the inbound and outbound calling. It can be done by going to the phone number option in the menu inside the connect instance. This phone number needs to be connected with the needed contact flow to make inbound calls. Then there is a queue option in the menu. There is already a queue as a basic queue there, just edit and give the outbound number as the phone number just created. There is a queue id, and it is used for triggering outbound calls in the lambda function. Along with this, the phone number, instance id and contact flow id is also used in the lambda function to initiate an outbound call. Give the user number as the destination number to make calls to that user. 
 
-**Creating a Lex Bot: Utilization and Configuration**
+## Creating a Lex Bot: Utilization and Configuration
 
 The utilization of Amazon Lex to create a bot was primarily for transcription and text-to-speech which allows transference of the data to/from the user to/from the Bedrock Agent via various Lambda functions. To create and configure this amount the Fallback Intent would go back to the connect loop and request the user to repeat what they said or end the call.
 
@@ -41,7 +48,7 @@ In the creation of a voice chatbot using Bedrock, key steps include storing data
 Within Bedrock, a knowledge base was created to consolidate all the essential information required for the chatbot’s operations with data sources from the S3 bucket. An embedding model, in our case Embed Multilingual v3, was also selected to enhance the knowledge base. Additionally, a vector database, such as the Vector Engine in Amazon OpenSearch Serverless, can be chosen to support efficient data retrieval and was used in our case to guarantee that information was collected and processed efficiently. Along with that, since AWS Bedrock allows for the syncing of data, we are able to dynamically improve the model through the new data from interactions being automatically uploaded to S3 and integrated into the knowledge base.
 The knowledge base id is used inside the inbound lambda function to set up the retrieval mechanism. The data from kb is used to generate an answer for the query from the user with converse. The answer is then passed to the lex from this lambda function and then it is passed to the connect and then to the user. The answer will be heard in the phone call as soon as the answer is generated. 
 
-**Lambda Functions: Utilizing Lambda To Connect AWS Services Together**
+## Lambda Functions: Utilizing Lambda To Connect AWS Services Together
 
 AWS Lambda, in our application,  allows for the creation of functions that integrate and connect the various services together and allow for seamless and efficiency between the various steps in the process to provide real time customer service while on a phone call. There were two primary Lambda functions created to integrate the Connect Flow, Lex Bot, and Bedrock Agent together for both inbound and outbound calls. 
 
