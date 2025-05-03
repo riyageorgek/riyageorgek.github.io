@@ -1,5 +1,6 @@
 ---
 title: "Voice Conversation Agent Leveraging Amazon Bedrock for Enhanced Customer Interactions"
+date: 2023-12-01 00:00:00 +0000
 categories: [LLM, AWS, Bedrock]
 tags: [LLM, AWS, Bedrock]
 ---
