@@ -55,12 +55,14 @@ order: 4
   - 🎞️ Movie Sentiment Analysis using GRU  
 - Utilized TensorFlow for model implementation. Created an interactive UI using Streamlit for enhanced user experience.  
 - **Technologies:** Python, TensorFlow, Streamlit.  
-- 🔗 [Project Files](https://github.com/riyageorge2000/Multitasking-Streamlit-Application-for-Tumor-Detection-and-Sentiment-Analysis-with-Deep-Learning)
+- 🔗 [Project Files](https://github.com/riyageorge2000/Multitasking-Streamlit-Application-for-Tumor-Detection-and-Sentiment-Analysis-with-Deep-Learning)    
+- 🧪 [![Demo](https://img.shields.io/badge/Demo-Click%20Here-brightgreen)](https://huggingface.co/spaces/riyageorge/Multitasking_App)
 
 ---
 
 ## 🗑️ Smart Dustbin using Arduino  
 - Designed and executed a Smart Dustbin prototype featuring Arduino, UV sensor, and Servo motor integration.  
+<img src="https://raw.githubusercontent.com/riyageorge2000/Smart-Dustbin/main/connections3.jpg" width="300" />
 - Implemented ultrasonic sensing for automated lid opening/closing based on proximity. Aimed to enhance hygienic waste disposal by reducing manual contact.  
 - **Technologies:** Arduino Uno.  
 - 🔗 [Project Files](https://github.com/riyageorge2000/Smart-Dustbin)
