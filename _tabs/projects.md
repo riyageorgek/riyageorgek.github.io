@@ -8,7 +8,8 @@ order: 4
 
 ---
 
-## 🤖 AI-Powered Telecom Chatbot  
+## 🤖 AI-Powered Telecom Chatbot    
+📅 2024 | 🏢 Innovation Incubator Advisory   
 - Focusing on developing an AI-powered telecom chatbot to automate customer support and query resolution.  
 - Implemented intent classification and entity recognition using Amazon Lex. Integrated knowledge-based real-time telecom data retrieval using AWS Bedrock, and optimized response generation with prompt engineering.  
 - **Technologies:** Python, Amazon Lex, Amazon Bedrock, Boto3.  
@@ -16,6 +17,7 @@ order: 4
 ---
 
 ## 🧠 Multi-Agent AI System for Telecom Automation  
+📅 2024 | 🏢 Innovation Incubator Advisory   
 - Focusing on the development of a multi-agent AI system for telecom operations.  
 - Designing intelligent agents to handle diverse tasks, including customer queries, API interactions, and knowledge retrieval. Optimized agent workflows and improved system efficiency for automated telecom support.  
 - **Technologies:** Python, Amazon Bedrock, Boto3.  
@@ -23,6 +25,7 @@ order: 4
 ---
 
 ## 🗂️ Appraisal Digitization  
+📅 2024 | 🏢 Innovation Incubator Advisory   
 - Focusing on automating the digitization of appraisal documents.  
 - Developed a classification model and conducted data extraction using OCR techniques, leveraging prompt engineering for efficient extraction.  
 - **Technologies**: Python, Scikit-learn, SpaCy, NLTK, Tesseract OCR, Paddle OCR, Google Cloud Vision OCR, OpenCV, OpenAI, Gemini, AWS Textract.  
@@ -31,6 +34,7 @@ order: 4
 ---
 
 ## 🌾 Citation Network Analysis of Robotics in Agriculture  
+📅 2023 | 🏢 Digital University Kerala    
 - Conducted Citation Network Analysis on the topic *"Robotics in Agriculture”* using data from Web of Science database.  
 - Proficient in Pajek and Gephi for main path and cluster analysis. Utilized NLP techniques for word frequency analysis with bar plots and thematic clustering using word clouds.  
 - Identified developmental trajectories of agricultural technologies and the growth of technological advancements in the sector.  
@@ -40,6 +44,7 @@ order: 4
 ---
 
 ## 📸 Real-time Attendance Marking System with Automatic Face Recognition using TensorFlow Lite  
+📅 2023 | 🏢 Digital University Kerala    
 - Created a facial image dataset of students. Used Label Studio for annotation and Roboflow for dataset enhancement.  
 - Implemented object detection using a pretrained SSD MobileNetV2 FPN-Lite 320 model to develop a TensorFlow Lite model for face recognition.  
 - Integrated the model for real-time attendance tracking, updating an Excel sheet based on detected faces via Computer Vision, reducing manual effort.  
@@ -49,6 +54,7 @@ order: 4
 ---
 
 ## 🎬 Multitasking App for Tumor Detection, SMS Spam Detection and Movie Sentiment Analysis with Deep Learning  
+📅 2023 | 🏢 Digital University Kerala     
 - Developed a **Streamlit app** for:
   - 🧠 Tumor Detection using CNN  
   - 📩 SMS Spam Detection using RNN, LSTM  
@@ -61,6 +67,7 @@ order: 4
 ---
 
 ## 🗑️ Smart Dustbin using Arduino  
+📅 2022 | 🏢 Digital University Kerala    
 - Designed and executed a Smart Dustbin prototype featuring Arduino, UV sensor, and Servo motor integration.  
 <img src="https://raw.githubusercontent.com/riyageorge2000/Smart-Dustbin/main/connections3.jpg" alt="Connection Smart Dustbin project" width="300" />
 - Implemented ultrasonic sensing for automated lid opening/closing based on proximity. Aimed to enhance hygienic waste disposal by reducing manual contact.  
