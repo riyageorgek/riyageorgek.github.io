@@ -62,7 +62,7 @@ order: 4
 
 ## 🗑️ Smart Dustbin using Arduino  
 - Designed and executed a Smart Dustbin prototype featuring Arduino, UV sensor, and Servo motor integration.  
-<img src="https://raw.githubusercontent.com/riyageorge2000/Smart-Dustbin/main/connections3.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/riyageorge2000/Smart-Dustbin/main/connections3.jpg" alt="Connection Smart Dustbin project" width="300" />
 - Implemented ultrasonic sensing for automated lid opening/closing based on proximity. Aimed to enhance hygienic waste disposal by reducing manual contact.  
 - **Technologies:** Arduino Uno.  
 - 🔗 [Project Files](https://github.com/riyageorge2000/Smart-Dustbin)
