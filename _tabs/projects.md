@@ -24,7 +24,7 @@ order: 4
 
 ---
 
-## 🗣️ Real-Time AI Telecom Voice Agent for Telecom Outbound Calls
+## 🗣️ Real-Time AI Telecom Voice Agent for Telecom Outbound and Inbound Calls
 📅 2025 | 🏢 Innovation Incubator Advisory  
 - Focusing on a Real-Time Voice Agent system for outbound telecom communication.  
 - Leveraged LiveKit to initiate and manage real-time audio calls to users.  
