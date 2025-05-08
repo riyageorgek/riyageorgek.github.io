@@ -26,12 +26,10 @@ order: 4
 
 ## 🗣️ Real-Time AI Telecom Voice Agent for Telecom Outbound and Inbound Calls
 📅 2025 | 🏢 Innovation Incubator Advisory  
-- Focusing on a Real-Time Voice Agent system for outbound telecom communication.  
-- Leveraged LiveKit to initiate and manage real-time audio calls to users.  
-- Integrated Amazon Nova Sonic speech to speech model to dynamically generate conversational responses during calls.  
-- System initiates outbound calls to deliver information and interacts live with users to resolve follow-up queries.  
-- Designed voice workflows with prompt engineering for natural, human-like interaction tailored to telecom use cases.  
-- **Technologies:** Python, LiveKit, AWS Nova, AWS Lambda, Python, Boto3, FastAPI.  
+- Focusing on a Real-Time Voice Agent system for outbound and inbound telecom communication leveraging Livekit to initiate and manage real-time audio calls to users. 
+-	Integrated Amazon Nova Sonic speech to speech model to dynamically generate conversational responses during calls. Used knowledge base for real time retrieval of telecom data.
+-	System can deliver information and interacts live with users to resolve follow-up queries. Designed voice workflows with prompt engineering for natural, human-like interaction tailored to telecom use cases. 
+- **Technologies:** Python, Livekit, Amazon Bedrock, Python, Boto3, FastAPI.  
 
 ---
 
