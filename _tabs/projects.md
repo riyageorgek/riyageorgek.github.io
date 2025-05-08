@@ -9,7 +9,7 @@ order: 4
 ---
 
 ## 🤖 AI-Powered Telecom Chatbot    
-📅 2024 | 🏢 Innovation Incubator Advisory   
+📅 2024-25 | 🏢 Innovation Incubator Advisory   
 - Focusing on developing an AI-powered telecom chatbot to automate customer support and query resolution.  
 - Implemented intent classification and entity recognition using Amazon Lex. Integrated knowledge-based real-time telecom data retrieval using AWS Bedrock, and optimized response generation with prompt engineering.  
 - **Technologies:** Python, Amazon Lex, Amazon Bedrock, Boto3, Django.  
@@ -17,7 +17,7 @@ order: 4
 ---
 
 ## 🧠 Multi-Agent AI System for Telecom Automation  
-📅 2024 | 🏢 Innovation Incubator Advisory   
+📅 2024-25 | 🏢 Innovation Incubator Advisory   
 - Focusing on the development of a multi-agent AI system for telecom operations.  
 - Designing intelligent agents to handle diverse tasks, including customer queries, API interactions, and knowledge retrieval. Optimized agent workflows and improved system efficiency for automated telecom support.  
 - **Technologies:** Python, Amazon Bedrock, Boto3, Django.  
@@ -25,7 +25,6 @@ order: 4
 ---
 
 ## 🗣️ Real-Time AI Telecom Voice Agent for Telecom Outbound Calls
-
 📅 2025 | 🏢 Innovation Incubator Advisory  
 - Focusing on a Real-Time Voice Agent system for outbound telecom communication.  
 - Leveraged LiveKit to initiate and manage real-time audio calls to users.  
