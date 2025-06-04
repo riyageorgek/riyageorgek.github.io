@@ -13,5 +13,4 @@ The advent of artificial intelligence (AI) has revolutionized various industries
 The key components of our solution, including Amazon Connect, Amazon Lex, and Amazon Bedrock and delve into the use of Lambda functions, Cloudwatch and Amazon Connect flows. 
 
 Refer the following link to get more details:
-https://dev.to/thomas_george_b5f25de89e4/leveraging-amazon-bedrock-agents-for-comprehensive-business-solutions-in-telecom-and-beyond-583h 
-
+[Leveraging Amazon Bedrock Agents for Comprehensive Business Solutions in Telecom and Beyond](https://dev.to/thomas_george_b5f25de89e4/leveraging-amazon-bedrock-agents-for-comprehensive-business-solutions-in-telecom-and-beyond-583h)
