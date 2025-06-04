@@ -1,8 +1,8 @@
 ---
 title: "Voice Conversation Agent Leveraging Amazon Bedrock for Enhanced Customer Interactions"
 date: 2024-12-01 00:00:00 +0000
-categories: [LLM, AWS, Bedrock]
-tags: [LLM, AWS, Bedrock]
+categories: [LLM, AWS, Bedrock, Agents]
+tags: [LLM, AWS, Bedrock, Agents]
 ---
 
 
@@ -10,54 +10,8 @@ tags: [LLM, AWS, Bedrock]
 
 The advent of artificial intelligence (AI) has revolutionized various industries, including customer service. In recent years, large language models (LLMs) have emerged as powerful tools for natural language processing (NLP) tasks. Here we explore the integration of Amazon Bedrock, a fully managed service that makes LLMs accessible to developers, with Amazon Connect, a cloud-based contact center solution, to enhance customer interactions. By combining the capabilities of Amazon Bedrock, Lex and Connect, we have developed a solution that can transcribe customer interactions in real-time, understand customer intent and sentiment, provide relevant information and assistance, automate routine tasks, and personalize interactions based on customer history and preferences. This integration leverages the power of LLMs to improve customer satisfaction and efficiency for our telecommunication industry application.
 
-We will discuss the key components of our solution, including Amazon Connect, Amazon Lex, and Amazon Bedrock. We will also delve into the use of Lambda functions, Cloudwatch and Amazon Connect flows. 
+The key components of our solution, including Amazon Connect, Amazon Lex, and Amazon Bedrock and delve into the use of Lambda functions, Cloudwatch and Amazon Connect flows. 
 
-## Architecture Overview: Integrating Amazon Bedrock with Amazon Connect Using AWS Services
-
-This section goes into detail about the architecture for a phone-based chatbot system that leverages Amazon Bedrock to generate dynamic responses during customer interactions. The process begins with data from external sources being ingested and stored in Amazon S3, which provide the necessary information for customer interactions. When a customer initiates a call through Amazon Connect or a call is initiated to the customer through connect, which acts as the entry point, allowing access to the stored data as needed with the general connections.
-
-AWS Lambda functions play a crucial role in this architecture by handling processing tasks and triggering actions. One Lambda function is responsible for initiating outbound calls, while another is connected to Amazon Lex for managing real-time conversations. Amazon Lex processes the customer's speech or text input and interacts with Amazon Bedrock. Bedrock, in turn, accesses a data store to generate contextually relevant and dynamic responses. These responses are then communicated back to the customer through Amazon Lex, creating a seamless interaction. Additionally, Amazon CloudWatch monitors and logs all activities within the system, ensuring that interactions and responses are tracked and optimized. This architecture effectively combines multiple AWS services to create an intelligent, voice-based chatbot capable of handling customer queries dynamically, with the advanced natural language understanding provided by Amazon Bedrock. 
-
-AWS Connect: Utilizing Connect Flow To Dynamically Interact With Customers
-Utilizing AWS Connect, we are able to initiate outbound and receive inbound support calls and dynamically interact with customers to help support their needs.
-First logging behavior is set (Set logging behavior)to log the details to the cloudwatch to monitor the call. From the above flow, our utilization of a Lex Connector allows us to receive customer input(Get customer input) and dynamically pass it to the Lex set inside that block. Then it is passed to the Lambda Function(Inbound Lambda) and eventually to the Bedrock for processing. 
-
-The utilization of Lex will be explained in further detail in a later section. However, one key attribute we use here is when defining the destination key in the Session’s attribute list to allow interrupt using “x-amz-lex:allow-interrupt.” The reason for this is to make the conversation more life-like and allow the customer to correct the service bot if they are going in the wrong direction or if they have solved the issue with the prior given recommendations. By using this setup we are able to transfer the voice data and communicate directly to the bedrock agent and thus are able to have a feedback loop in case audio isn't transferred or the call is completed and thus are able to guarantee accurate and meaningful customer interactions.
-
-If the user doesn't talk for some time the Play Prompt will be played to check whether the user is still here. If the user doesn't speak then the call will be passed to the Disconnect block and get disconnected. If the user speaks again, it will be caught by the Get customer input block and the conversation can be continued. And if the user again becomes silent, the Play prompt is played to check the user is still here and disconnect the call.
-
-The contact flow can be downloaded from the export option and can be used if we needed to use the exact same contact flow in another connect instance. It can be done by importing the downloaded file in an empty new flow created. After that the lex bot name inside the Get customer input block needs to be changed if wanted  to connect to a new lex bot. The name of the lex bot and alias can be added in the flows inside the connect instance settings. The inbound and outbound telephony can be enabled. If the call needs to be to an Indian number that needs to be added separately by contacting the support team.
-(https://docs.aws.amazon.com/connect/latest/adminguide/country-code-allow-list.html)
-
-Also need to create a phone number for the inbound and outbound calling. It can be done by going to the phone number option in the menu inside the connect instance. This phone number needs to be connected with the needed contact flow to make inbound calls. Then there is a queue option in the menu. There is already a queue as a basic queue there, just edit and give the outbound number as the phone number just created. There is a queue id, and it is used for triggering outbound calls in the lambda function. Along with this, the phone number, instance id and contact flow id is also used in the lambda function to initiate an outbound call. Give the user number as the destination number to make calls to that user. 
-
-## Creating a Lex Bot: Utilization and Configuration
-
-The utilization of Amazon Lex to create a bot was primarily for transcription and text-to-speech which allows transference of the data to/from the user to/from the Bedrock Agent via various Lambda functions. To create and configure this amount the Fallback Intent would go back to the connect loop and request the user to repeat what they said or end the call.
-
-To create a Lex bot with the necessary functionality, begin by setting up the bot with two intents: defaultIntent and fallbackIntent. The FallbackIntent is automatically generated for you, so you only need to focus on configuring the defaultIntent. Next, go to each of your intents and enable the "allow Lambda hook" option at the bottom of the intent configuration page to ensure your bot can interact with the Lambda function. The language in the bot version is selected and the voice can be set as Matthew. 
-
-After configuring the Lambda function(inbound lambda needs permission for using this lex), it is crucial to set up the appropriate IAM permissions to ensure secure and seamless interaction between your Lex bot, Lambda, and other services. 
-
-Once your intents are set up, the next step is to connect your Lex bot to a Lambda function. To do this, navigate to your bot's alias, select the appropriate language, and add the Lambda function you created. Use the alias to attach the inbound lambda function. This will be working in the bot since the dialog code hooks inside intents are already activated.
-
-TestBotAlias is already there and it can be used for this(or another version can be created and used with an alias). Then, add a resource-based policy to your Lex bot. This policy must be added at the bottom of the alias configuration page. Then, add three IAM resource-based policies to your Lambda function: Bedrock invocation, Connect invocation, and Lex invocation. These policies will allow your Lambda function to communicate effectively with the necessary AWS services. Connect the draft version with the intents to this alias. Finally, grant your Bedrock agent the necessary permissions to access the Lambda function. You can give the agent full access to Lambda, or if you prefer more control, you can create an inline policy that specifically grants access to the Lambda function you created. By following these steps, you ensure your Lex bot is properly configured and secure, with all necessary permissions for optimal performance.
-Amazon Bedrock: Knowledge Base Creation and Output Automation
-
-In the creation of a voice chatbot using Bedrock, key steps include storing data in Amazon S3, building a knowledge base, and developing the chatbot agent. Storing relevant data in Amazon S3 is a crucial step. This data helps with customer interactions or other relevant information needed to deliver accurate and helpful responses. A dedicated S3 bucket was created to organize and securely manage this data. Access controls ensure that only authorized entities can access sensitive information providing the necessary security for personal data not only for the telecommunication sector but other ones as well. The necessary data, including explanations for different terms in the dataset, was uploaded to this bucket where this integration between S3 and Bedrock allowed for efficient data retrieval during chatbot operations.
-
-Within Bedrock, a knowledge base was created to consolidate all the essential information required for the chatbot’s operations with data sources from the S3 bucket. An embedding model, in our case Embed Multilingual v3, was also selected to enhance the knowledge base. Additionally, a vector database, such as the Vector Engine in Amazon OpenSearch Serverless, can be chosen to support efficient data retrieval and was used in our case to guarantee that information was collected and processed efficiently. Along with that, since AWS Bedrock allows for the syncing of data, we are able to dynamically improve the model through the new data from interactions being automatically uploaded to S3 and integrated into the knowledge base.
-The knowledge base id is used inside the inbound lambda function to set up the retrieval mechanism. The data from kb is used to generate an answer for the query from the user with converse. The answer is then passed to the lex from this lambda function and then it is passed to the connect and then to the user. The answer will be heard in the phone call as soon as the answer is generated. 
-
-## Lambda Functions: Utilizing Lambda To Connect AWS Services Together
-
-AWS Lambda, in our application,  allows for the creation of functions that integrate and connect the various services together and allow for seamless and efficiency between the various steps in the process to provide real time customer service while on a phone call. There were two primary Lambda functions created to integrate the Connect Flow, Lex Bot, and Bedrock Agent together for both inbound and outbound calls. 
-
-The first one was, as mentioned in the previous section, utilized to interact with the Bedrock knowledge base to generate answers to the user queries. This Lambda function is used to get the response from the agent for the corresponding question from the user end. This Lambda function is designed to process incoming events, interact with AWS Bedrock in real time, and generate appropriate responses based on user inputs. It needs to be given the necessary permissions to access the bedrock, lex, connect etc. Inline policies for using these can be added. IAM permission can also be added for bedrock and cloudwatch. In the configuration, the timeout is to be set to 10 mins and memory and storage as 1536. 
-
-The second Lambda function is used to trigger the Connect flow for making an outbound call to the customer and trigger the other Lambda Function with necessary instruction to make the agent understand the purpose of the call. Through this implementation we are able to include another important aspect of customer service which allows us to reach out to the customer if any issues or flags are detected in the data being collected. The configuration is set for 10 mins for timeout. IAM permissions are added for connect and lambda invocation.
-
-The Outbound lambda function is used to trigger calls to the user. The destination phone number to the user can be set inside this lambda function. If a message needs to be given in the start of the conversation it also can be set in the outbound lambda. It will be played when the user answers the call. After playing that , the user can interact and ask questions and get relevant answers. 
-
-Through these Lambda functions, we are able to integrate the whole process together to develop a knowledgeable customer service agent that can help automate and personalize the customer interactions while still providing the same meaningful feedback that a normal customer service agent would.
+Refer the following link to get more details:
+https://dev.to/thomas_george_b5f25de89e4/leveraging-amazon-bedrock-agents-for-comprehensive-business-solutions-in-telecom-and-beyond-583h 
 
