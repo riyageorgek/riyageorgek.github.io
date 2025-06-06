@@ -8,6 +8,15 @@ order: 4
 
 ---
 
+## 🗣️ Real-Time AI Voice Agent for Telecom Outbound and Inbound Calls
+📅 2025 | 🏢 Innovation Incubator Advisory  
+- Focusing on a Real-Time Voice Agent system for outbound and inbound telecom communication leveraging Livekit to initiate and manage real-time audio calls to users. 
+-	Integrated Amazon Nova Sonic speech to speech model to dynamically generate conversational responses during calls. Used knowledge base for real time retrieval of telecom data.
+-	System can deliver information and interacts live with users to resolve follow-up queries. Designed voice workflows with prompt engineering for natural, human-like interaction tailored to telecom use cases. 
+- **Technologies:** Python, Livekit, Amazon Bedrock, Boto3, FastAPI.  
+
+---
+
 ## 🤖 AI-Powered Telecom Chatbot    
 📅 2024-25 | 🏢 Innovation Incubator Advisory   
 - Focusing on developing an AI-powered telecom chatbot to automate customer support and query resolution.  
@@ -24,12 +33,13 @@ order: 4
 
 ---
 
-## 🗣️ Real-Time AI Voice Agent for Telecom Outbound and Inbound Calls
-📅 2025 | 🏢 Innovation Incubator Advisory  
-- Focusing on a Real-Time Voice Agent system for outbound and inbound telecom communication leveraging Livekit to initiate and manage real-time audio calls to users. 
--	Integrated Amazon Nova Sonic speech to speech model to dynamically generate conversational responses during calls. Used knowledge base for real time retrieval of telecom data.
--	System can deliver information and interacts live with users to resolve follow-up queries. Designed voice workflows with prompt engineering for natural, human-like interaction tailored to telecom use cases. 
-- **Technologies:** Python, Livekit, Amazon Bedrock, Python, Boto3, FastAPI.  
+## 🗣️ AI Voice Agent for Outbound and Inbound Calls with AWS Bedrock, Lambda, Lex and Connect
+📅 2024 | 🏢 Innovation Incubator Advisory  
+- Focused on a Voice Agent system for outbound and inbound telecom communication leveraging AWS Connect, Lex and Lambda to initiate and manage real-time audio calls to users. 
+-	Integrated Amazon Bedrock Agents with anthropic models to dynamically generate conversational responses during calls. Used knowledge base for real time retrieval of telecom data.
+-	System can deliver information and interacts live with users to resolve follow-up queries. Used prompt engineering in Bedrock agents for natural, human-like interaction tailored to telecom use cases. 
+- **Technologies:** Python, AWS Bedrock, AWS Lex, AWS Connect, AWS Lambda, Boto3.  
+- 🔗 [Article](https://dev.to/thomas_george_b5f25de89e4/leveraging-amazon-bedrock-agents-for-comprehensive-business-solutions-in-telecom-and-beyond-583h)
 
 ---
 
