@@ -13,7 +13,7 @@ order: 4
 - Focusing on a Real-Time Voice Agent system for outbound and inbound telecom communication leveraging Livekit to initiate and manage real-time audio calls to users. 
 -	Integrated Amazon Nova Sonic speech to speech model to dynamically generate conversational responses during calls. Used knowledge base for real time retrieval of telecom data.
 -	System can deliver information and interacts live with users to resolve follow-up queries. Designed voice workflows with prompt engineering for natural, human-like interaction tailored to telecom use cases. 
-- **Technologies:** Python, Livekit, Amazon Bedrock, Boto3, FastAPI.  
+- **Technologies:** Python, Livekit, Amazon Bedrock, Amazon Chime, Twilio, Boto3, FastAPI.  
 - 🔗 [Article](https://dev.to/innovationincubator/building-real-time-conversational-ai-agent-for-telecom-using-livekit-with-amazon-bedrock-and-nova-4kgk)
 
 ---
