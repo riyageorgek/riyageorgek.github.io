@@ -1,5 +1,5 @@
 ---
-title: "Building Real-Time Conversational AI Agent for Telecom Using LiveKit with Amazon Bedrock and Nova"
+title: "Building Real-Time Conversational AI Agent for Telecom Using LiveKit with Amazon Bedrock and Nova Sonic"
 date: 2025-06-21 00:00:00 +0000
 categories: [AI, LLM, AWS, Bedrock, Real-Time, Voice]
 tags: [LLM, AWS, Bedrock, LiveKit, Nova, Telecom]
