@@ -1,7 +1,7 @@
 ---
 title: Amazon Nova Models – Speed & Performance Insights
 date: 2024-12-10 00:00:00 +0000
-categories: [AI, LLM, Bedrock]
+categories: [AI, LLM]
 tags: [AWS, Bedrock, Amazon Nova, Foundation Models, AI Performance]
 ---
 
