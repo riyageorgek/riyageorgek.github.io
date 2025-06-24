@@ -19,7 +19,7 @@ Conversational AI is rapidly transforming the telecom industry by enabling more 
 The solution supports streaming voice input, contextual understanding, memory retention, and intelligent response generation—making it a robust framework for telecom use cases like customer support automation, IVR upgrades, and agent assistance.
 </p>
 
-<div style="background: linear-gradient(90deg, #f7971e, #ffd200); padding: 1.5rem; border-radius: 1rem; margin-top: 2rem; color: #1f1c2c;">
+<div style="background: linear-gradient(90deg,rgb(233, 162, 77),rgb(224, 214, 169)); padding: 1.5rem; border-radius: 1rem; margin-top: 2rem; color: #1f1c2c;">
   <p>🔗 Outlined the full architecture and key implementation details in the following post:</p>
   <a href="https://dev.to/innovationincubator/building-real-time-conversational-ai-agent-for-telecom-using-livekit-with-amazon-bedrock-and-nova-4kgk" target="_blank" style="font-weight: bold; text-decoration: none; color: #1f1c2c;">📖 Read on Dev.to</a>
 </div>
