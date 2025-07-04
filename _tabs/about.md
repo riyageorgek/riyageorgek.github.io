@@ -53,6 +53,32 @@ order: 5
 
 ----
 
+#### 💼 Experience
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Organization</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Junior AI Engineer</td>
+      <td>Innovation Incubator Advisory</td>
+      <td>Aug 2024 – Present</td>
+    </tr>
+    <tr>
+      <td>Artificial Intelligence Intern</td>
+      <td>Innovation Incubator Advisory</td>
+      <td>Feb 2024 – Jul 2024</td>
+    </tr>
+  </tbody>
+</table>
+
+----
+
 #### 📫 How to reach me:  
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/riyageorge2000) 
 [![Twitter](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=twitter)](https://twitter.com/riyageorge2000)
