@@ -49,7 +49,7 @@ order: 4
 - Focusing on automating the digitization of appraisal documents.  
 - Developed a classification model and conducted data extraction using OCR techniques, leveraging prompt engineering for efficient extraction.  
 - **Technologies**: Python, Scikit-learn, SpaCy, NLTK, Tesseract OCR, Paddle OCR, Google Cloud Vision OCR, OpenCV, OpenAI, Gemini, AWS Textract, FastAPI.  
-- 🔗 [Project Files](https://github.com/riyageorge2000/Appraisal-Digitization)
+- 🔗 [Project Files](https://github.com/riyageorgek/Appraisal-Digitization)
 
 ---
 
@@ -59,7 +59,7 @@ order: 4
 - Proficient in Pajek and Gephi for main path and cluster analysis. Utilized NLP techniques for word frequency analysis with bar plots and thematic clustering using word clouds.  
 - Identified developmental trajectories of agricultural technologies and the growth of technological advancements in the sector.  
 - **Technologies:** Python, Gephi, Pajek, Matplotlib, Seaborn, Word cloud, NLTK.  
-- 🔗 [Project Files](https://github.com/riyageorge2000/CITATION-NETWORK-ANALYSIS-OF-ROBOTICS-IN-AGRICULTURE)
+- 🔗 [Project Files](https://github.com/riyageorgek/CITATION-NETWORK-ANALYSIS-OF-ROBOTICS-IN-AGRICULTURE)
 
 ---
 
@@ -69,7 +69,7 @@ order: 4
 - Implemented object detection using a pretrained SSD MobileNetV2 FPN-Lite 320 model to develop a TensorFlow Lite model for face recognition.  
 - Integrated the model for real-time attendance tracking, updating an Excel sheet based on detected faces via Computer Vision, reducing manual effort.  
 - **Technologies:** Python, Label Studio, Roboflow, TensorFlow Lite.  
-- 🔗 [Project Files](https://github.com/riyageorge2000/PROJECT-Real-time-Attendance-Marking-System-with-Automatic-Face-Recognition-using-TensorFlow-Lite)
+- 🔗 [Project Files](https://github.com/riyageorgek/PROJECT-Real-time-Attendance-Marking-System-with-Automatic-Face-Recognition-using-TensorFlow-Lite)
 
 ---
 
@@ -81,7 +81,7 @@ order: 4
   - 🎞️ Movie Sentiment Analysis using GRU  
 - Utilized TensorFlow for model implementation. Created an interactive UI using Streamlit for enhanced user experience.  
 - **Technologies:** Python, TensorFlow, Streamlit.  
-- 🔗 [Project Files](https://github.com/riyageorge2000/Multitasking-Streamlit-Application-for-Tumor-Detection-and-Sentiment-Analysis-with-Deep-Learning)    
+- 🔗 [Project Files](https://github.com/riyageorgek/Multitasking-Streamlit-Application-for-Tumor-Detection-and-Sentiment-Analysis-with-Deep-Learning)    
 - 🧪 [![Demo](https://img.shields.io/badge/Demo-Click%20Here-brightgreen)](https://huggingface.co/spaces/riyageorge/Multitasking_App)
 
 ---
@@ -89,7 +89,7 @@ order: 4
 ## 🗑️ Smart Dustbin using Arduino  
 📅 2022 | 🏢 Digital University Kerala    
 - Designed and executed a Smart Dustbin prototype featuring Arduino, UV sensor, and Servo motor integration.  
-<img src="https://raw.githubusercontent.com/riyageorge2000/Smart-Dustbin/main/connections3.jpg" alt="Connection Smart Dustbin project" width="300" />
+<img src="https://raw.githubusercontent.com/riyageorgek/Smart-Dustbin/main/connections3.jpg" alt="Connection Smart Dustbin project" width="300" />
 - Implemented ultrasonic sensing for automated lid opening/closing based on proximity. Aimed to enhance hygienic waste disposal by reducing manual contact.  
 - **Technologies:** Arduino Uno.  
-- 🔗 [Project Files](https://github.com/riyageorge2000/Smart-Dustbin)
+- 🔗 [Project Files](https://github.com/riyageorgek/Smart-Dustbin)

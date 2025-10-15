@@ -23,13 +23,13 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://riyageorge2000.github.io"
+url: "https://riyageorgek.github.io"
 
 github:
-  username: riyageorge2000 # change to your GitHub username
+  username: riyageorgek # change to your GitHub username
 
 twitter:
-  username: riyageorge2000 # change to your Twitter username
+  username: riyageorgek # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -38,11 +38,11 @@ social:
   # email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/riyageorge2000 # change to your Twitter homepage
-    - https://github.com/riyageorge2000 # change to your GitHub homepage
+    - https://twitter.com/riyageorgek # change to your Twitter homepage
+    - https://github.com/riyageorgek # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/riyageorge2000
+    - https://www.linkedin.com/in/riyageorgek
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://github.com/riyageorge2000.png
+avatar: https://github.com/riyageorgek.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
