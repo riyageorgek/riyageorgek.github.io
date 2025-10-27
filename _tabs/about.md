@@ -186,8 +186,9 @@ order: 5
 
 <script>
   const certificates = [
+    { title: "Project Management Essentials", url: "https://drive.google.com/drive/folders/1y2C9UiL5x_Esn1EcOM6uYwplS6Ga0Q2C", icon: "fas fa-award", provider: "Innovation Incubator Advisory", date: "September 2025" },
     { title: "Vibe Coding", url: "https://www.sololearn.com/certificates/CC-2ZEIVTFH", icon: "fas fa-robot", provider: "Sololearn", date: "August 2025" },
-    { title: "Generative AI in Practice", url: "https://www.sololearn.com/en/certificates/CC-X98QU8L5", icon: "fas fa-robot", provider: "Sololearn", date: "July 2025" },
+    { title: "Generative AI in Practice", url: "https://www.sololearn.com/en/certificates/CC-X98QU8L5", icon: "fas fa-brain", provider: "Sololearn", date: "July 2025" },
     { title: "Prompt Engineering", url: "https://www.sololearn.com/en/certificates/CC-JO9M0AWF", icon: "fas fa-code", provider: "Sololearn", date: "July 2025" },
     { title: "Neo4j Fundamentals", url: "https://graphacademy.neo4j.com/c/891c5176-8d60-497e-824d-93217199bc70/", icon: "fas fa-project-diagram", provider: "Neo4j", date: "July 2024" },
     { title: "OpenCV Bootcamp", url: "https://courses.opencv.org/certificates/6dd2df8e0e2b4b37bcacc8c5f573a788", icon: "fas fa-camera", provider: "OpenCV University", date: "February 2024" },
