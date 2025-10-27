@@ -186,7 +186,7 @@ order: 5
 
 <script>
   const certificates = [
-    { title: "Project Management Essentials", url: "https://drive.google.com/drive/folders/1y2C9UiL5x_Esn1EcOM6uYwplS6Ga0Q2C", icon: "fas fa-award", provider: "Innovation Incubator Advisory", date: "September 2025" },
+    { title: "Project Management Essentials", url: "https://drive.google.com/file/d/1QcG_0_XWjXJnnajUjYSEWKr5-EZCiRA2/view?usp=drive_link", icon: "fas fa-award", provider: "Innovation Incubator Advisory", date: "September 2025" },
     { title: "Vibe Coding", url: "https://www.sololearn.com/certificates/CC-2ZEIVTFH", icon: "fas fa-robot", provider: "Sololearn", date: "August 2025" },
     { title: "Generative AI in Practice", url: "https://www.sololearn.com/en/certificates/CC-X98QU8L5", icon: "fas fa-brain", provider: "Sololearn", date: "July 2025" },
     { title: "Prompt Engineering", url: "https://www.sololearn.com/en/certificates/CC-JO9M0AWF", icon: "fas fa-code", provider: "Sololearn", date: "July 2025" },
