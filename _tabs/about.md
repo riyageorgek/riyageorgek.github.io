@@ -71,9 +71,14 @@ order: 5
   </thead>
   <tbody>
     <tr>
+      <td>AI Engineer</td>
+      <td>Innovation Incubator Advisory</td>
+      <td>Aug 2025 – Present</td>
+    </tr>
+    <tr>
       <td>Junior AI Engineer</td>
       <td>Innovation Incubator Advisory</td>
-      <td>Aug 2024 – Present</td>
+      <td>Aug 2024 – Jul 2025</td>
     </tr>
     <tr>
       <td>Artificial Intelligence Intern</td>
