@@ -191,6 +191,7 @@ order: 5
 
 <script>
   const certificates = [
+    { title: "Agentic Workflows", url: "https://www.sololearn.com/en/certificates/CC-UBHSAEZN", icon: "fas fa-code-branch", provider: "Sololearn", date: "March 2026" },
     { title: "Project Management Essentials", url: "https://drive.google.com/file/d/1QcG_0_XWjXJnnajUjYSEWKr5-EZCiRA2/view?usp=drive_link", icon: "fas fa-award", provider: "Innovation Incubator Advisory", date: "September 2025" },
     { title: "Vibe Coding", url: "https://www.sololearn.com/certificates/CC-2ZEIVTFH", icon: "fas fa-robot", provider: "Sololearn", date: "August 2025" },
     { title: "Generative AI in Practice", url: "https://www.sololearn.com/en/certificates/CC-X98QU8L5", icon: "fas fa-brain", provider: "Sololearn", date: "July 2025" },
