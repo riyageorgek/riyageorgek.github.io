@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SocialLinks from '../components/SocialLinks.jsx';
 import { projects } from '../data/projects.js';
-import { skills } from '../data/skills.js';
 import { experience } from '../data/experience.js';
 import ProjectCard from '../components/ProjectCard.jsx';
 import { useReveal } from '../hooks/useReveal.js';
@@ -150,33 +149,6 @@ export default function Home() {
           </div>
           <div style={{ marginTop: '32px' }}>
             <Link to="/experience" className="btn btn-secondary">View Full Timeline →</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Preview */}
-      <section style={{ paddingTop: 'var(--section-gap-sm)' }}>
-        <div className="container">
-          <div className="section-header">
-            <span className="label">04 — Skills</span>
-            <h2>What I Work With</h2>
-          </div>
-          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
-            {skills.slice(0, 3).map((skill) => (
-              <div key={skill.category} className="card reveal" style={{ padding: '24px' }}>
-                <h4 style={{ marginBottom: '12px', fontSize: '0.9rem' }}>{skill.category}</h4>
-                <div className="tags">
-                  {skill.items.slice(0, 4).map((item) => (
-                    <span key={item.label} className={`tag ${item.variant ? 'tag-' + item.variant : ''}`}>
-                      {item.label}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link to="/skills" className="btn btn-secondary">View All Skills →</Link>
           </div>
         </div>
       </section>
