@@ -46,20 +46,19 @@ export default function Credentials() {
               <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px' }}>
                 {section.items.map((cert) => (
                   <div key={cert.title} className="card reveal" style={{ padding: '20px', display: 'flex', flexDirection: 'column' }}>
-                    {cert.url ? (
-                      <a href={cert.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <h4 style={{ marginBottom: '4px', color: 'var(--accent-blue-light)' }}>{cert.title}</h4>
-                      </a>
-                    ) : (
-                      <h4 style={{ marginBottom: '4px' }}>{cert.title}</h4>
-                    )}
+                    <h4 style={{ marginBottom: '4px' }}>{cert.title}</h4>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
                       {cert.issuer}
                     </p>
                     {cert.date && (
-                      <p style={{ fontSize: '0.8rem', color: 'var(--text-faint)' }}>
+                      <p style={{ fontSize: '0.8rem', color: 'var(--text-faint)', marginBottom: '12px' }}>
                         {cert.date}
                       </p>
+                    )}
+                    {cert.url && (
+                      <a href={cert.url} target="_blank" rel="noopener noreferrer" style={{ marginTop: 'auto', fontSize: '0.85rem' }} className="btn btn-ghost">
+                        {cert.url.includes('verify') ? 'Verify →' : 'View →'}
+                      </a>
                     )}
                   </div>
                 ))}
