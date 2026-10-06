@@ -2,7 +2,7 @@ export default function SkillCard({ skill }) {
   return (
     <div className="card reveal">
       <h3 style={{ marginBottom: '4px' }}>
-        <span className="label">{skill.num}</span>
+        <span className="label" style={{ marginRight: '12px' }}>{skill.num}</span>
         {skill.category}
       </h3>
       <div className="tags" style={{ marginTop: '16px' }}>

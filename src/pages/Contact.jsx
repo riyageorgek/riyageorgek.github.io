@@ -17,7 +17,7 @@ export default function Contact() {
 
       <section>
         <div className="container">
-          <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', maxWidth: '900px', margin: '0 auto' }}>
+          <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', maxWidth: '900px', margin: '0 auto', alignItems: 'start' }}>
 
             {/* Contact Links */}
             <div className="reveal">
@@ -52,10 +52,10 @@ export default function Contact() {
 
             {/* Info Panel */}
             <div className="contact-info-panel reveal" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <p style={{ fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', fontFamily: 'var(--font-heading)', marginBottom: '0px' }}>
+                Also on
+              </p>
               <div className="card" style={{ padding: '20px', borderColor: 'var(--border-card)', background: 'var(--bg-card-hover)' }}>
-                <p style={{ fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', fontFamily: 'var(--font-heading)', marginBottom: '8px' }}>
-                  Also on
-                </p>
                 <a href={SITE.credly} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.9rem', color: 'var(--accent-blue-light)', display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }}>
                   Credly — Verified Badges ↗
                 </a>

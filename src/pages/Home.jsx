@@ -39,17 +39,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Preview Section */}
-      <section>
-        <div className="container">
-          <div className="section-header centered reveal">
-            <span className="label">About</span>
-            <h2>Building AI systems, one agent at a time.</h2>
-            <p>I'm an AI Engineer focused on agentic systems and production AI. My work spans multi-agent architectures, voice AI, and building the infrastructure that makes AI reliable enough to run continuously in real business environments.</p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section>
         <div className="container">

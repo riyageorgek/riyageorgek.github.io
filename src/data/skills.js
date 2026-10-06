@@ -21,6 +21,22 @@ export const skills = [
   },
   {
     num: '02',
+    category: 'AWS',
+    items: [
+      { label: 'Amazon Bedrock', variant: 'primary' },
+      { label: 'Bedrock AgentCore', variant: 'primary' },
+      { label: 'Amazon Textract' },
+      { label: 'AWS Lambda' },
+      { label: 'Amazon Connect' },
+      { label: 'Amazon Polly' },
+      { label: 'Amazon S3' },
+      { label: 'Amazon EventBridge' },
+      { label: 'Amazon CloudWatch' },
+      { label: 'AWS IAM' },
+    ],
+  },
+  {
+    num: '03',
     category: 'Voice & Conversational AI',
     items: [
       { label: 'LiveKit', variant: 'violet' },
@@ -34,7 +50,7 @@ export const skills = [
     ],
   },
   {
-    num: '03',
+    num: '04',
     category: 'Backend',
     items: [
       { label: 'Python', variant: 'primary' },
@@ -44,22 +60,6 @@ export const skills = [
       { label: 'SQL' },
       { label: 'REST APIs' },
       { label: 'Async Python' },
-    ],
-  },
-  {
-    num: '04',
-    category: 'AWS',
-    items: [
-      { label: 'Amazon Bedrock', variant: 'primary' },
-      { label: 'Bedrock AgentCore', variant: 'primary' },
-      { label: 'Amazon Textract' },
-      { label: 'AWS Lambda' },
-      { label: 'Amazon Connect' },
-      { label: 'Amazon Polly' },
-      { label: 'Amazon S3' },
-      { label: 'Amazon EventBridge' },
-      { label: 'Amazon CloudWatch' },
-      { label: 'AWS IAM' },
     ],
   },
   {

@@ -18,7 +18,7 @@ export default function Skills() {
 
       <section>
         <div className="container">
-          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '24px' }}>
             {skills.map((skill) => (
               <SkillCard key={skill.category} skill={skill} />
             ))}
