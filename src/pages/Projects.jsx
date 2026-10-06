@@ -18,7 +18,7 @@ export default function Projects() {
 
       <section>
         <div className="container">
-          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '24px' }}>
+          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '24px' }}>
             {projects.map((proj) => (
               <ProjectCard key={proj.id} project={proj} />
             ))}
