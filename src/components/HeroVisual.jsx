@@ -33,9 +33,53 @@ export default function HeroVisual() {
             opacity: 0.8;
           }
         }
-        @keyframes nodeFloat {
-          0%, 100% { opacity: 0.4; }
-          50% { opacity: 0.9; }
+        @keyframes dataFlow {
+          0% { 
+            offset-distance: 0%;
+            opacity: 0;
+          }
+          20% {
+            opacity: 0.7;
+          }
+          80% {
+            opacity: 0.7;
+          }
+          100% { 
+            offset-distance: 100%;
+            opacity: 0;
+          }
+        }
+        @keyframes dataFlow2 {
+          0% { 
+            offset-distance: 0%;
+            opacity: 0;
+          }
+          20% {
+            opacity: 0.6;
+          }
+          80% {
+            opacity: 0.6;
+          }
+          100% { 
+            offset-distance: 100%;
+            opacity: 0;
+          }
+        }
+        @keyframes dataFlow3 {
+          0% { 
+            offset-distance: 0%;
+            opacity: 0;
+          }
+          20% {
+            opacity: 0.65;
+          }
+          80% {
+            opacity: 0.65;
+          }
+          100% { 
+            offset-distance: 100%;
+            opacity: 0;
+          }
         }
         .data-particle {
           animation: floatParticle 5s ease-in-out infinite;
@@ -49,12 +93,18 @@ export default function HeroVisual() {
         .particle-three {
           animation-delay: 3s;
         }
-        .node-float {
-          animation: nodeFloat 4s ease-in-out infinite;
+        .flow-dot {
+          fill: #9DD2FF;
+          filter: drop-shadow(0 0 3px rgba(153, 210, 255, 0.6));
         }
-        .node-float-2 {
-          animation: nodeFloat 5s ease-in-out 0.5s infinite;
-        }
+        .flow-path-1 .flow-dot { animation: dataFlow 4s ease-in-out infinite; }
+        .flow-path-2 .flow-dot { animation: dataFlow 5s ease-in-out 0.5s infinite; }
+        .flow-path-3 .flow-dot { animation: dataFlow 4.5s ease-in-out 1s infinite; }
+        .flow-path-4 .flow-dot { animation: dataFlow2 5.5s ease-in-out 0.7s infinite; }
+        .flow-path-5 .flow-dot { animation: dataFlow2 4.8s ease-in-out 1.2s infinite; }
+        .flow-path-6 .flow-dot { animation: dataFlow3 5.2s ease-in-out 0.3s infinite; }
+        .flow-path-7 .flow-dot { animation: dataFlow3 4.6s ease-in-out 1.5s infinite; }
+        .flow-path-8 .flow-dot { animation: dataFlow 5.5s ease-in-out 0.9s infinite; }
       `}</style>
 
       <div className="hero-glow hero-glow-one" />
@@ -105,22 +155,35 @@ export default function HeroVisual() {
           opacity="0.25"
         />
 
-        {/* Network connections */}
+        {/* Network connections with animated data flow */}
         {connections.map(([x1, y1, x2, y2], index) => (
-          <line
-            key={index}
-            x1={x1}
-            y1={y1}
-            x2={x2}
-            y2={y2}
-            stroke="url(#connectionGradient)"
-            strokeWidth="1.2"
-          />
+          <g key={`conn-${index}`}>
+            {/* Base connection line */}
+            <line
+              x1={x1}
+              y1={y1}
+              x2={x2}
+              y2={y2}
+              stroke="url(#connectionGradient)"
+              strokeWidth="1.2"
+              opacity="0.4"
+            />
+            
+            {/* Animated data packet flowing through connection */}
+            <g className={`flow-path-${index + 1}`}>
+              <circle
+                cx={x1}
+                cy={y1}
+                r="2.5"
+                className="flow-dot"
+              />
+            </g>
+          </g>
         ))}
 
-        {/* Glowing nodes with animation */}
+        {/* Glowing nodes */}
         {nodes.map((node, index) => (
-          <g key={index} className={index % 2 === 0 ? 'node-float' : 'node-float-2'}>
+          <g key={`node-${index}`}>
             <circle
               cx={node.cx}
               cy={node.cy}
@@ -140,7 +203,7 @@ export default function HeroVisual() {
         ))}
 
         {/* Central intelligent-system node */}
-        <g className="node-float">
+        <g>
           <circle
             cx="285"
             cy="155"
