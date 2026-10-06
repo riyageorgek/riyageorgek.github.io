@@ -1,9 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SocialLinks from '../components/SocialLinks.jsx';
-import { projects } from '../data/projects.js';
-import { experience } from '../data/experience.js';
-import ProjectCard from '../components/ProjectCard.jsx';
 import { useReveal } from '../hooks/useReveal.js';
 
 export default function Home() {
@@ -104,51 +101,6 @@ export default function Home() {
             <span className="label">About</span>
             <h2>Building AI systems, one agent at a time.</h2>
             <p>I'm an AI Engineer focused on agentic systems and production AI. My work spans multi-agent architectures, voice AI, and building the infrastructure that makes AI reliable enough to run continuously in real business environments.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects */}
-      <section>
-        <div className="container">
-          <div className="section-header">
-            <span className="label">02 — Featured Work</span>
-            <h2>Recent Projects</h2>
-          </div>
-          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
-            {projects.slice(0, 2).map((proj) => (
-              <ProjectCard key={proj.id} project={proj} />
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link to="/projects" className="btn btn-secondary">View All Projects →</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Experience */}
-      <section style={{ paddingTop: 'var(--section-gap-sm)' }}>
-        <div className="container">
-          <div className="section-header">
-            <span className="label">03 — Experience</span>
-            <h2>Recent Work</h2>
-          </div>
-          <div style={{ maxWidth: '680px' }}>
-            {experience.slice(0, 1).map((exp) => (
-              <div key={exp.id} className="reveal" style={{ marginBottom: '28px' }}>
-                <div style={{ marginBottom: '8px' }}>
-                  <span className="label">{exp.period}</span>
-                </div>
-                <h3 style={{ marginBottom: '2px' }}>{exp.role}</h3>
-                <p style={{ marginBottom: '12px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-                  {exp.company}
-                </p>
-                <p>{exp.description}</p>
-              </div>
-            ))}
-          </div>
-          <div style={{ marginTop: '32px' }}>
-            <Link to="/experience" className="btn btn-secondary">View Full Timeline →</Link>
           </div>
         </div>
       </section>
