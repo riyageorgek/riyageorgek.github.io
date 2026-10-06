@@ -60,12 +60,14 @@
   }
 
   .hero-visual {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: 300px;
+    transform: none;
     order: 2;
-  }
-
-  .ai-canvas {
-    max-width: 360px;
-    margin: 0 auto;
+    opacity: 0.65;
   }
 
   /* About preview */
@@ -177,6 +179,17 @@
     font-size: clamp(2.2rem, 8vw, 3.5rem);
   }
 
+  .hero-visual {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: 280px;
+    transform: none;
+    order: 2;
+    opacity: 0.65;
+  }
+
   /* Section header */
   .section-header {
     margin-bottom: 48px;
@@ -263,6 +276,15 @@
   .hero-actions {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-visual {
+    position: absolute;
+    right: -220px;
+    top: 58%;
+    width: 520px;
+    height: 350px;
+    opacity: 0.3;
   }
 
   .btn {

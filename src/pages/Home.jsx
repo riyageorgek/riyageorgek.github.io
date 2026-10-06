@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SocialLinks from '../components/SocialLinks.jsx';
+import HeroVisual from '../components/HeroVisual.jsx';
 import { useReveal } from '../hooks/useReveal.js';
 
 export default function Home() {
@@ -33,60 +34,7 @@ export default function Home() {
             <SocialLinks />
           </div>
           <div className="hero-visual">
-            <svg className="ai-canvas" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <style>{`
-                  .ai-orbit-1 { animation: orbit-rotate 18s linear infinite; transform-origin: 240px 240px; }
-                  .ai-orbit-2 { animation: orbit-rotate 28s linear infinite reverse; transform-origin: 240px 240px; }
-                  @keyframes orbit-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-                  .ai-node-core { animation: node-pulse 3s ease-in-out infinite; }
-                  @keyframes node-pulse { 0%, 100% { opacity: 1; r: 20; } 50% { opacity: 0.7; r: 22; } }
-                  .ai-signal { animation: signal-flow 3s ease-in-out infinite; }
-                  .ai-signal-2 { animation: signal-flow 3s ease-in-out 1s infinite; }
-                  .ai-signal-3 { animation: signal-flow 3s ease-in-out 2s infinite; }
-                  @keyframes signal-flow { 0% { opacity: 0; stroke-dashoffset: 200; } 20% { opacity: 0.8; } 80% { opacity: 0.8; } 100% { opacity: 0; stroke-dashoffset: 0; } }
-                `}</style>
-              </defs>
-
-              {/* Background grid */}
-              <rect width="480" height="480" fill="none" opacity="0.05" stroke="currentColor" strokeWidth="1" strokeDasharray="40,10" />
-
-              {/* Outer orbit */}
-              <circle className="ai-orbit-1" cx="240" cy="240" r="200" fill="none" stroke="url(#gradOrbit1)" strokeWidth="1" opacity="0.3" strokeDasharray="4,4" />
-
-              {/* Inner orbit */}
-              <circle className="ai-orbit-2" cx="240" cy="240" r="120" fill="none" stroke="url(#gradOrbit2)" strokeWidth="1" opacity="0.3" strokeDasharray="4,4" />
-
-              {/* Center node */}
-              <circle className="ai-node-core" cx="240" cy="240" r="20" fill="none" stroke="url(#gradNode)" strokeWidth="2" />
-              <circle cx="240" cy="240" r="20" fill="none" stroke="rgba(59, 139, 235, 0.1)" strokeWidth="8" />
-
-              {/* Nodes on orbits */}
-              <circle cx="440" cy="240" r="8" fill="rgba(59, 139, 235, 0.4)" opacity="0.6" />
-              <circle cx="240" cy="40" r="8" fill="rgba(124, 110, 245, 0.4)" opacity="0.6" />
-              <circle cx="40" cy="240" r="8" fill="rgba(59, 139, 235, 0.4)" opacity="0.6" />
-
-              {/* Signal paths */}
-              <path className="ai-signal" d="M 240 240 L 440 240" stroke="rgba(59, 139, 235, 0.6)" strokeWidth="2" fill="none" strokeDasharray="10,5" />
-              <path className="ai-signal-2" d="M 240 240 L 240 40" stroke="rgba(124, 110, 245, 0.6)" strokeWidth="2" fill="none" strokeDasharray="10,5" />
-              <path className="ai-signal-3" d="M 240 240 L 40 240" stroke="rgba(59, 139, 235, 0.6)" strokeWidth="2" fill="none" strokeDasharray="10,5" />
-
-              {/* Gradients */}
-              <defs>
-                <linearGradient id="gradNode" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(59, 139, 235, 0.8)" />
-                  <stop offset="100%" stopColor="rgba(124, 110, 245, 0.8)" />
-                </linearGradient>
-                <linearGradient id="gradOrbit1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(59, 139, 235, 0.4)" />
-                  <stop offset="100%" stopColor="rgba(124, 110, 245, 0.4)" />
-                </linearGradient>
-                <linearGradient id="gradOrbit2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(124, 110, 245, 0.4)" />
-                  <stop offset="100%" stopColor="rgba(59, 139, 235, 0.4)" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <HeroVisual />
           </div>
         </div>
       </section>
