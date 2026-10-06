@@ -8,7 +8,6 @@ build/
 
 # Dependencies
 *.lock
-package-lock.json
 yarn.lock
 
 # Environment
