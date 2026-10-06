@@ -50,7 +50,7 @@ export const credentialSections = [
       { title: 'Data Visualization with Power BI', issuer: 'Great Learning', date: 'Aug 2023', url: 'https://verify.mygreatlearning.com/verify/YORTMJHI' },
       { title: 'Data Visualization using Tableau', issuer: 'Great Learning', date: 'Aug 2023', url: 'https://verify.mygreatlearning.com/verify/HPIDILDO' },
       { title: 'Data Visualization: Empowering Business with Effective Insights', issuer: 'Tata (Forage)', date: 'Aug 2023', url: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata_YSk44E4ZjCzCyYXQ4_1692007030550_completion_certificate.pdf' },
-      { title: 'Overview of Data Visualization', issuer: 'Coursera', date: 'Dec 2023', url: null },
+      { title: 'Overview of Data Visualization', issuer: 'Coursera', date: 'Dec 2023', url: 'https://www.coursera.org/account/accomplishments/certificate/L52NMH9S5YST' },
       { title: 'Introduction to Data Analytics', issuer: 'Coursera', date: 'Apr 2023', url: 'https://coursera.org/verify/44PVMR7GE6M8' },
       { title: 'Data Analytics Virtual Experience Program', issuer: 'Quantium (Forage)', date: 'Jul 2023', url: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/NkaC7knWtjSbi6aYv_Quantium_YSk44E4ZjCzCyYXQ4_1688730581209_completion_certificate.pdf' },
       { title: 'Data Analytics and Visualization Virtual Experience', issuer: 'Accenture (Forage)', date: 'Jul 2023', url: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_YSk44E4ZjCzCyYXQ4_1688726615494_completion_certificate.pdf' },
