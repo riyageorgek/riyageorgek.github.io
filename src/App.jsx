@@ -11,7 +11,6 @@ import Projects from './pages/Projects.jsx';
 import ProjectDetail from './pages/ProjectDetail.jsx';
 import Skills from './pages/Skills.jsx';
 import Credentials from './pages/Credentials.jsx';
-import Resume from './pages/Resume.jsx';
 import Contact from './pages/Contact.jsx';
 import NotFound from './pages/NotFound.jsx';
 
@@ -30,7 +29,6 @@ export default function App() {
           <Route path="/projects/:id"             element={<ProjectDetail />} />
           <Route path="/skills"                   element={<Skills />} />
           <Route path="/credentials"              element={<Credentials />} />
-          <Route path="/resume"                   element={<Resume />} />
           <Route path="/contact"                  element={<Contact />} />
           <Route path="*"                         element={<NotFound />} />
         </Routes>

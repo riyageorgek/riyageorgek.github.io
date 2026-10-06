@@ -29,9 +29,6 @@ export default function Home() {
               <Link to="/projects" className="btn btn-primary">
                 Explore My Work
               </Link>
-              <a href="/Riya-George-Resume.pdf" download className="btn btn-secondary">
-                Download Resume
-              </a>
             </div>
             <SocialLinks />
           </div>
