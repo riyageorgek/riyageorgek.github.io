@@ -1,0 +1,369 @@
+/* ============================================
+   RIYA GEORGE — AI ENGINEER
+   Responsive Stylesheet
+   ============================================ */
+
+/* ============================================
+   1200px — Large Desktop
+   ============================================ */
+@media (max-width: 1200px) {
+  :root {
+    --section-gap: 100px;
+  }
+
+  .hero-inner {
+    gap: 60px;
+  }
+
+  .hero-name {
+    font-size: clamp(2.4rem, 5.5vw, 4rem);
+  }
+
+  .contact-cta {
+    padding: 64px 48px;
+  }
+}
+
+/* ============================================
+   1024px — Laptop
+   ============================================ */
+@media (max-width: 1024px) {
+  :root {
+    --section-gap: 80px;
+    --section-gap-sm: 64px;
+  }
+
+  /* Nav */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  /* Hero */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .hero-visual {
+    order: 2;
+  }
+
+  .ai-canvas {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  /* About preview */
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills */
+  .skills-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About page */
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* Work areas */
+  .work-areas {
+    grid-template-columns: 1fr;
+  }
+
+  /* Approach */
+  .approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Project detail */
+  .project-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Credentials */
+  .credentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Resume */
+  .resume-item {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-item-date {
+    text-align: left;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* About stats */
+  .about-preview-stats {
+    max-width: 440px;
+  }
+
+  /* Projects full */
+  .projects-full-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   768px — Tablet
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --section-gap: 64px;
+    --section-gap-sm: 48px;
+    --nav-height: 64px;
+  }
+
+  .container,
+  .container-narrow {
+    padding: 0 20px;
+  }
+
+  .nav-inner {
+    padding: 0 20px;
+  }
+
+  .nav-mobile {
+    padding: 16px 20px 24px;
+  }
+
+  h1 { font-size: clamp(1.9rem, 7vw, 3rem); }
+  h2 { font-size: clamp(1.5rem, 5vw, 2.2rem); }
+
+  /* Hero */
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero-name {
+    font-size: clamp(2.2rem, 8vw, 3.5rem);
+  }
+
+  /* Section header */
+  .section-header {
+    margin-bottom: 48px;
+  }
+
+  /* Stats */
+  .about-preview-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Skills */
+  .skills-categories {
+    grid-template-columns: 1fr;
+  }
+
+  /* Approach */
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact CTA */
+  .contact-cta {
+    padding: 48px 28px;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  /* Experience */
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-dot {
+    left: -32px;
+  }
+
+  .timeline-content {
+    padding: 24px;
+  }
+
+  /* Credentials */
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Project sidebar */
+  .project-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  /* Scroll top */
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Grid helpers */
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Exp card */
+  .experience-preview-card {
+    padding: 28px 24px;
+  }
+}
+
+/* ============================================
+   480px — Large Mobile
+   ============================================ */
+@media (max-width: 480px) {
+  :root {
+    --section-gap: 56px;
+    --section-gap-sm: 40px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-social {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  .about-preview-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-block:first-child,
+  .stat-block:nth-child(2),
+  .stat-block:nth-child(3),
+  .stat-block:last-child {
+    border-radius: 8px;
+  }
+
+  /* Contact CTA */
+  .contact-cta-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Page header */
+  .page-header {
+    padding-top: calc(var(--nav-height) + 48px);
+    padding-bottom: 48px;
+  }
+}
+
+/* ============================================
+   375px — Small Mobile (iPhone SE etc.)
+   ============================================ */
+@media (max-width: 375px) {
+  :root {
+    --section-gap: 48px;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+
+  .container,
+  .container-narrow {
+    padding: 0 16px;
+  }
+
+  .nav-inner {
+    padding: 0 16px;
+  }
+
+  .nav-logo-mark {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ai-canvas {
+    max-width: 300px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 24px 20px;
+  }
+
+  .timeline-content {
+    padding: 20px 18px;
+  }
+}
+
+/* ============================================
+   PRINT
+   ============================================ */
+@media print {
+  .nav,
+  .scroll-top,
+  .theme-toggle,
+  .hero-visual {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
