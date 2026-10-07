@@ -20,26 +20,18 @@
   <script>
     // Cache busting: Check if app version has changed
     (function() {
-      const buildTime = new Date().toISOString();
       const lastBuildTime = localStorage.getItem('app_build_time');
+      const currentTime = new Date().toISOString().split('T')[0]; // Use date only, not full timestamp
       
-      if (lastBuildTime && lastBuildTime !== buildTime && lastBuildTime !== 'unknown') {
+      if (lastBuildTime && lastBuildTime !== currentTime) {
         console.log('New version detected. Clearing cache...');
-        // Clear service worker cache
-        if ('caches' in window) {
-          caches.keys().then(cacheNames => {
-            cacheNames.forEach(cacheName => {
-              caches.delete(cacheName);
-            });
-          });
-        }
+        localStorage.clear();
         // Hard refresh to get latest version
-        setTimeout(() => {
-          window.location.reload(true);
-        }, 100);
+        window.location.href = window.location.href;
+        return;
       }
       
-      localStorage.setItem('app_build_time', buildTime);
+      localStorage.setItem('app_build_time', currentTime);
     })();
   </script>
   <script type="module" src="/src/main.jsx"></script>
