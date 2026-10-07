@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Riya George — AI Engineer</title>
   <meta name="description" content="Riya George - AI Engineer specializing in agentic systems, voice AI, and production AI infrastructure." />
   <meta property="og:title" content="Riya George — AI Engineer" />
@@ -14,6 +17,31 @@
 </head>
 <body>
   <div id="root"></div>
+  <script>
+    // Cache busting: Check if app version has changed
+    (function() {
+      const buildTime = new Date().toISOString();
+      const lastBuildTime = localStorage.getItem('app_build_time');
+      
+      if (lastBuildTime && lastBuildTime !== buildTime && lastBuildTime !== 'unknown') {
+        console.log('New version detected. Clearing cache...');
+        // Clear service worker cache
+        if ('caches' in window) {
+          caches.keys().then(cacheNames => {
+            cacheNames.forEach(cacheName => {
+              caches.delete(cacheName);
+            });
+          });
+        }
+        // Hard refresh to get latest version
+        setTimeout(() => {
+          window.location.reload(true);
+        }, 100);
+      }
+      
+      localStorage.setItem('app_build_time', buildTime);
+    })();
+  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
