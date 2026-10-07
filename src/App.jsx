@@ -16,7 +16,7 @@ import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <ScrollRestoration />
       <Navbar />
       <main>
