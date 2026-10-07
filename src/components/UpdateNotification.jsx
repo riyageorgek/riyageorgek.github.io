@@ -44,8 +44,18 @@ export default function UpdateNotification() {
         });
       });
     }
-    localStorage.clear();
-    window.location.reload(true);
+    // Clear only app-specific storage, keep user preferences
+    const keysToKeep = ['app_build_hash'];
+    const keysToDelete = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!keysToKeep.includes(key)) {
+        keysToDelete.push(key);
+      }
+    }
+    keysToDelete.forEach(key => localStorage.removeItem(key));
+    // Force hard reload
+    window.location.href = window.location.href;
   };
 
   return (
