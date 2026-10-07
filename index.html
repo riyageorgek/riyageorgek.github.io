@@ -17,24 +17,6 @@
 </head>
 <body>
   <div id="root"></div>
-  <script>
-    // Cache busting: Check if app version has changed
-    (function() {
-      const lastBuildTime = localStorage.getItem('app_build_time');
-      const currentTime = new Date().toISOString().split('T')[0]; // Use date only, not full timestamp
-      
-      if (lastBuildTime && lastBuildTime !== currentTime) {
-        console.log('New version detected. Clearing cache...');
-        localStorage.clear();
-        // Hard refresh to get latest version
-        window.location.href = window.location.href;
-        return;
-      }
-      
-      localStorage.setItem('app_build_time', currentTime);
-    })();
-  </script>
   <script type="module" src="/src/main.jsx"></script>
-  <!-- Cache busting and version check -->
 </body>
 </html>

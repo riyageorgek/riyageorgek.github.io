@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import ScrollRestoration from './components/ScrollRestoration.jsx';
+import UpdateNotification from './components/UpdateNotification.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Education from './pages/Education.jsx';
@@ -35,6 +36,7 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <UpdateNotification />
     </BrowserRouter>
   );
 }
